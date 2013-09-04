@@ -1,6 +1,6 @@
 ## middleman-template
 
-A middleman template just for me. Uses Haml, Sass, Bourbon, Neat and comes with some examples and settings.
+A middleman template just for me. Uses Haml, Sass, Bourbon, Neat, Livereload etc. and comes with some examples and settings.
 
 ### Installation
  
