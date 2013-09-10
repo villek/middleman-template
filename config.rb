@@ -3,6 +3,9 @@ set :css_dir,     'stylesheets'
 set :js_dir,      'javascripts'
 set :images_dir,  'images'
 
+# Partials directory
+set :partials_dir, 'partials'
+
 # Livereload
 activate :livereload
 
