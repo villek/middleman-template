@@ -1,5 +1,15 @@
 module HtmlHelpers
 
+  # set and retrieve a document title
+  # Usage:
+  #   title("foo"); title(["bar", "bat"])
+  #   title # => "bat | bar | foo"
+  def title(fragment = nil, separator = " | ")
+    @title ||= [current_page.data.title]
+    @title << fragment
+    @title.reverse.flatten.compact.reject(&:empty?).join(separator)
+  end
+  
   # Render HTML tag with conditional tags for IE
   def ie_html(attrs={}, &block)
     attrs.keys.each do |key|
