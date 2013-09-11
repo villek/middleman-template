@@ -9,7 +9,7 @@ module HtmlHelpers
     @title << fragment
     @title.reverse.flatten.compact.reject(&:empty?).join(separator)
   end
-  
+
   # Render HTML tag with conditional tags for IE
   def ie_html(attrs={}, &block)
     attrs.keys.each do |key|
